@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
-    $setting = DB::table('sitesetting')->first();
-
 
 <head>
     <meta charset="utf-8">
@@ -39,7 +37,19 @@
 
 </head>
 
-<body class="">
+<body class="@@body-box">
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -56,44 +66,43 @@
 
 
     <!--====================  header area ====================-->
-    <div class="header-area header-area--default">
+    <div class="header-area header-area--default bg-white">
 
         <!-- Header Bottom Wrap Start -->
-        <header class="header-area header_absolute header_height-90 header-sticky">
-            <div class="container-fluid container-fluid--cp-60">
+        <header class="header-area header_absolute header_height-120 header-sticky section-space--pb_30">
+            <div class="container-fluid container-fluid--cp-100">
                 <div class="row align-items-center">
 
-                    <div class="col-lg-4 col-md-4 col-6 ">
-                        <div class="logo d-block d-lg-none">
-                            Sanaa Space
+                    <div class="col-lg-3 col-lg-3 col-6">
+                        <div class="logo text-left">
+                            <h2><a href="#">Sanaa Space</a></h2>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-6">
-                        <div class="header-right-side text-right">
-                            <div class="header-right-items  d-none d-md-block">
-                                <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                    <i class="icon-user"></i>
-                                </a>
-                            </div>
-                            <div class="header-right-items d-none d-md-block">
-                                <a href="#" class="header-cart">
-                                    <i class="icon-heart"></i>
-                                    <span class="item-counter">0</span>
-                                </a>
-                            </div>
 
+                    <div class="col-lg-6 col-lg-6  d-none d-lg-block">
+                        <!-- navigation menu -->
+                        <div class="header__navigation d-none d-lg-block">
+                            <nav class="navigation-menu d-flex align-items-center">
+                                <!-- top navigation menu -->
+                            </nav>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-lg-3 col-6">
+                        <div class="header-right-side text-right">
                             <div class="header-right-items">
-                                <a href="#miniCart" class=" header-cart minicart-btn toolbar-btn header-icon">
-                                    <i class="icon-bag2"></i>
-                                    <span class="item-counter">0</span>
-                                </a>
-                            </div>
-                            <div class="header-right-items d-block d-md-none">
                                 <a href="javascript:void(0)" class="search-icon" id="search-overlay-trigger">
                                     <i class="icon-magnifier"></i>
                                 </a>
                             </div>
                             <div class="header-right-items">
+                                <a href="#" class=" header-cart minicart-btn toolbar-btn header-icon">
+                                    <i class="icon-bag2"></i>
+                                    <span class="item-counter"></span>
+                                </a>
+                            </div>
+
+                            <div class="header-right-items ">
                                 <a href="#" class="mobile-navigation-icon" id="mobile-menu-trigger">
                                     <i class="icon-menu"></i>
                                 </a>
@@ -116,79 +125,18 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="header-left-sidebar">
-        <div class="header-left-sidebar__content">
-            <div class="header-left-sidebar__content-header">
-
-            </div>
-            <div class="header-left-sidebar__content-body">
-                <div class="logo">
-                    Sanaa Space
-                </div>
-                <div class="mobile-menu-overlay__body pl-0 pr-0">
-
-                    <nav class="offcanvas-navigation mt-30">
-                        <ul>
-                            <li class="has-children">
-                                <a href="#">Home</a>
-                            </li>
-                            <li class="has-children">
-                                <a href="#">Shop</a>
-                            </li>
-                            <li class="has-children">
-                                <a href="#">About us</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div class="currency-selector-top-area section-space--mt_60  border-top">
-                        <div class=" row section-space--mt_60 ">
-                            <div class="widget-language col-md-12 mb-20">
-                                <ul>
-                                    <li class="actived"> <a href="#">English</a></li>
-                                </ul>
-                            </div>
-                            <div class="widget-currency col-md-12">
-                                <ul>
-                                    <li class="actived"><a href="#">Kenya Shillings</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mobile-menu-social-share section-space--mt_60">
-                        <p>Follow US On Socials</p>
-                        <ul class="social-share">
-                            <li><a href="#"><i class="social social_facebook"></i></a></li>
-                            <li><a href="#"><i class="social social_twitter"></i></a></li>
-                            <li><a href="#"><i class="social social_linkedin"></i></a></li>
-                        </ul>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="header-left-sidebar__content-footer"></div>
-        </div>
-
-    </div>
-
-    <div class="page-template-template-home-left-sidebar">
+    <div id="main-wrapper">
         <div class="site-wrapper-reveal">
+
+            <!-- Content area -->
             @yield('content')
+
         </div>
+
+
+
+
+
 
 
 
@@ -204,62 +152,62 @@
 
 
         <!--====================  footer area ====================-->
-        <div class="footer-area-wrapper bg-gray">
-            <div class="footer-area section-space--ptb_120">
-                <div class="container">
+        <div class="footer-area-wrapper">
+            <div class="footer-area section-space--ptb_30">
+                <div class="container text-center">
                     <div class="row footer-widget-wrapper">
-                        <div class="col-md-4 col-sm-6 footer-widget">
+                        <div class="col-md-4 col-sm-4 footer-widget">
                             <h6 class="footer-widget__title mb-20">Company</h6>
                             <ul class="footer-widget__list">
-                                <li><a href="#" class="hover-style-link">About us</a></li>
-                                <li><a href="#" class="hover-style-link">FAQs</a></li>
-                                <li> <i class="icon_phone"></i><a href="M: +254 (0) 794 813 835" class="hover-style-link">M: +254 (0) 794 813 835</a></li>
+                                <li> <i class="icon_mail"></i><a href="mailto:hello@sanaaspace.co"
+                                        class="hover-style-link">hello@sanaaspace.co</a></li>
+                                <li> <i class="icon_phone"></i><a href="M: +254 (0) 794 813 835"
+                                        class="hover-style-link">M: +254 (0) 794 813 835</a></li>
                             </ul>
-                            <ul class="list footer-social-networks mt-25">
+                        </div>
 
+                        <div class="col-md-4 col-sm-4 footer-widget">
+                            <h6 class="footer-widget__title mb-20">Help & Information</h6>
+                            <ul class="footer-widget__list">
+                                <li><a href="#" class="hover-style-link">Terms of Service</a></li>
+                                <li><a href="#" class="hover-style-link">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 footer-widget">
+                            <h6 class="footer-widget__title mb-20">Social media</h6>
+                            <ul class="list footer-social-networks mt-25">
                                 <li class="item">
-                                    <a href="#" target="_blank" aria-label="Twitter">
+                                    <a href="#" target="_blank" aria-label="Facebook">
                                         <i class="social social_facebook"></i>
                                     </a>
                                 </li>
                                 <li class="item">
-                                    <a href="#" target="_blank" aria-label="Facebook">
+                                    <a href="#" target="_blank" aria-label="Twitter">
                                         <i class="social social_twitter"></i>
                                     </a>
                                 </li>
                                 <li class="item">
                                     <a href="#" target="_blank" aria-label="Instagram">
-                                        <i class="social social_tumblr"></i>
+                                        <i class="social social_instagram"></i>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                        
-                        <div class="col-md-4 col-sm-6 footer-widget">
-                            <h6 class="footer-widget__title mb-20">Help & Information</h6>
-                            <ul class="footer-widget__list">
-                                <li><a href="#" class="hover-style-link">Terms of Service</a></li>
-                                <li><a href="#" class="hover-style-link">Privacy Policy</a></li>
-                                <li><a href="#" class="hover-style-link">Terms & Conditions</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 col-sm-6 footer-widget">
-                            <h6 class="footer-widget__title mb-20">Social media</h6>
-                            <ul class="footer-widget__list">
-                                <li><a href="#" class="hover-style-link">Twitter</a></li>
-                                <li><a href="#" class="hover-style-link">Facebook</a></li>
-                                <li><a href="#" class="hover-style-link">Instagram</a></li>
-                                <li><a href="#" class="hover-style-link">Linkedin</a></li>
+                                <li class="item">
+                                    <a href="#" target="_blank" aria-label="Instagram">
+                                        <i class="social social_linkedin"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright-area section-space--pb_30">
+            <div class="footer-copyright-area section-space--pb_20">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <span class="copyright-text text-center  section-space--mt_40">&copy; 2020 Sanaa Space. <a href="https://sanaaspace.co" target="_blank">All Rights Reserved.</a></span>
+                            <span class="copyright-text text-center  section-space--mt_40">&copy; 2021 Sanaa Space. <a
+                                    href="https://sanaaspace.co" target="_blank">All Rights Reserved.</a></span>
                         </div>
                     </div>
                 </div>
@@ -267,20 +215,6 @@
         </div>
         <!--====================  End of footer area  ====================-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
 
     <!-- Modal -->
@@ -347,7 +281,6 @@
     </div>
 
 
-
     <!-- Modal -->
     <div class="header-login-register-wrapper modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -410,7 +343,6 @@
             </div>
         </div>
     </div>
-
 
     <!--====================  mobile menu overlay ====================-->
     <div class="mobile-menu-overlay" id="mobile-menu-overlay">
@@ -421,10 +353,21 @@
                 <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"> <i class="icon-cross2"></i></span>
             </div>
 
-
             <div class="mobile-menu-overlay__body">
+                
+                <nav class="offcanvas-navigation section-space--mb_30">
+                    <ul>
+                        <li class="has-children">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="has-children">
+                            <a href="#">Furniture</a>
+                        </li>
+                    </ul>
+                </nav>
+
                 <div class="offcanvas-menu-header d-md-block d-none">
-                    <div class="helendo-language-currency row-flex row section-space--mb_60 ">
+                    <div class="helendo-language-currency row-flex row section-space--ptb_30">
                         <div class="widget-language col-md-6">
                             <h6> Language</h6>
                             <ul>
@@ -434,46 +377,63 @@
                         <div class="widget-currency col-md-6">
                             <h6> Currencies</h6>
                             <ul>
-                                <li class="actived"><a href="#">Kenya Shillings</a></li>
+                                <li class="actived"><a href="#">Ksh - Kenya Shillings</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <nav class="offcanvas-navigation">
-                    <ul>
-                        <li class="has-children">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="has-children">
-                            <a href="#">Shop</a>
-                        </li>
-                        <li class="has-children">
-                            <a href="#">About us</a>
-                        </li>
-                    </ul>
-                </nav>
 
-                <div class="mobile-menu-contact-info section-space--mt_60">
+                <div class="mobile-menu-contact-info section-space--mt_30">
                     <h6>Contact Us</h6>
-                    <p>Sanaa Space Nairobi, Kenya <br> hello@sanaaspace.co <br>M: +254 (0) 794 813 835</p>
+                    <p>Email: hello@sanaaspace.co <br>Mobile: +254 (0) 794 813 835</p>
                 </div>
 
-                <div class="mobile-menu-social-share section-space--mt_60">
-                    <p>Follow US On Socials</p>
-                        <ul class="social-share">
-                            <li><a href="#"><i class="social social_facebook"></i></a></li>
-                            <li><a href="#"><i class="social social_twitter"></i></a></li>
-                            <li><a href="#"><i class="social social_linkedin"></i></a></li>
-                        </ul>
+                <div class="mobile-menu-social-share section-space--mt_30">
+                    <ul class="social-share">
+                        <li><a href="#"><i class="social social_facebook"></i></a></li>
+                        <li><a href="#"><i class="social social_twitter"></i></a></li>
+                        <li><a href="#"><i class="social social_instagram"></i></a></li>
+                        <li><a href="#"><i class="social social_linkedin"></i></a></li>
+                    </ul>
                 </div>
 
             </div>
 
         </div>
 
-
     </div>
     <!--====================  End of mobile menu overlay  ====================-->
+
+    <!--====================  search overlay ====================-->
+    <div class="search-overlay" id="search-overlay">
+
+        <div class="search-overlay__header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-8">
+                        <div class="search-title">
+                            <h4 class="font-weight--normal">Search</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ml-auto col-4">
+                        <!-- search content -->
+                        <div class="search-content text-right">
+                            <span class="mobile-navigation-close-icon" id="search-close-trigger"><i class="icon-cross"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-overlay__inner">
+            <div class="search-overlay__body">
+                <div class="search-overlay__form">
+                    <div class="container"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of search overlay  ====================-->
 
 
     <!--====================  scroll top ====================-->
@@ -482,7 +442,6 @@
         <i class="arrow-bottom icon-arrow-up"></i>
     </a>
     <!--====================  End of scroll top  ====================-->
-
 
     <!-- JS
     ============================================ -->
