@@ -355,13 +355,13 @@
 
             <div class="mobile-menu-overlay__body">
                 
-                <nav class="offcanvas-navigation section-space--mb_30">
+                <nav class="offcanvas-navigation section-space--mb_40">
                     <ul>
                         <li class="has-children">
-                            <a href="#">Home</a>
+                            <a href="#"><u>Home</u></a>
                         </li>
                         <li class="has-children">
-                            <a href="#">Furniture</a>
+                            <a href="#"><u>Furniture</u></a>
                         </li>
                     </ul>
                 </nav>
@@ -384,11 +384,10 @@
                 </div>
 
                 <div class="mobile-menu-contact-info section-space--mt_30">
-                    <h6>Contact Us</h6>
-                    <p>Email: hello@sanaaspace.co <br>Mobile: +254 (0) 794 813 835</p>
+                    <p><b style="color: #1E2B45;">Contact Us:</b> <br> Email: hello@sanaaspace.co <br>Mobile: +254 (0) 794 813 835</p>
                 </div>
 
-                <div class="mobile-menu-social-share section-space--mt_30">
+                <div class="mobile-menu-social-share section-space--mt_15">
                     <ul class="social-share">
                         <li><a href="#"><i class="social social_facebook"></i></a></li>
                         <li><a href="#"><i class="social social_twitter"></i></a></li>

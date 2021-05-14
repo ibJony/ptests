@@ -15,7 +15,7 @@
                     <p class="mt-30"> Order artisan-made furniture from brands you love <br /> and discover new
                         ones, all in one place.</p>
 
-                    <div class="button-box section-space--mt_40">
+                    <div class="button-box section-space--mt_20">
                         <a href="#" class="btn--text-icon btn btn-dark text-center">Explore Collection</a>
                         <br/><br/>
                     </div>
@@ -136,21 +136,21 @@
 <div class="featuted-product-wrap section-space--ptb_60 bg-gray">
     <div class="container">
         <div class="row align-items-center text-sm-left text-center">
-            <div class="col-lg-7 col-md-6 order-lg-1 order-2">
+            <div class="col-lg-7 col-md-6 order-lg-1 order-2 section-space--pb_10">
                 <div class="product-thumbnail">
                     <a href="#"><img src="{{ asset('sanaaspace/assets/images/aboutus.jpg')}}" class="img-fluid" alt="Featured Image"></a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-6 order-lg-2 order-1">
                 <div class="hero-text-7 mt-lg-5">
-                    <h2 class="section-space--mt_30"><b>We make furniture <br> shopping simple</b></h2>
+                    <h2 class="section-space--mt_10"><b>We make furniture <br> shopping simple</b></h2>
                     <p class="mt-30"> Sanaa Space is an online artisan-made furniture
                         marketplace. </p> 
                         <p> Enjoy a familiar e-commerce experience with all your
                         favorite brands to choose from - and easily find what best suits your
                         needs.</p>
 
-                    <div class="button-box section-space--mt_30">
+                    <div class="button-box section-space--mt_20">
                         <a href="#" class="btn--text-icon text-center btn btn-dark">Shop now</a>
                         <br/><br/>
                     </div>
@@ -168,7 +168,7 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-12">
-                <div class="section-title text-center mb-20">
+                <div class="section-title text-center section-space--mt_20">
                     <h3 class="section-title">Featured Products</h3>
                 </div>
             </div>
