@@ -160,7 +160,7 @@
                                 </a>
                             </div>
                             <div class="product-content">
-                                <h6 class="prodect-title"><a href="#">Benchi tiled bench</a></h6>
+                                <h6 class="prodect-title"><a href="#">Whipped Cream Bench</a></h6>
                                 <h2 class="prodect-title"><a href="#">Achuli Design</a></h2>
                                 <div class="prodect-price">
                                     <p class="new-price">Ksh. 70,000</p>
