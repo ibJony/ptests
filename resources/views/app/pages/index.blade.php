@@ -31,36 +31,8 @@
 </div>
 <!-- End of the Banner -->
 
-<!-- Steps flow here-->
-<div class="about-us-area section-space--pt_90">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-4 section-space--mt_30">
-                <div class="hero-about-us-content text-center">
-                    <h4><b>1. Create an account</b></h4>
-                </div>
-            </div>
-            <div class="col-lg-4 section-space--mt_30">
-                <div class="hero-about-us-content text-center">
-                    <h4><b>2. Shop for furniture</b></h4>
-
-                </div>
-            </div>
-            <div class="col-lg-4 section-space--mt_30">
-                <div class="hero-about-us-content text-center">
-                    <h4><b>3. Get it delivered and enjoy!</b></h4>
-
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</div>
-<!-- End of steps flow here-->
-
-
 <!-- Featured products -->
-<div class="featuted-product-wrap section-space--pt_30 section-space--pb_60">
+<div class="featuted-product-wrap section-space--pt_20 section-space--pb_60">
     <div class="container text-lg-center">
         <div class="tab-content mt-30">
             <div class="tab-pane fade show active" id="tab_list_01">
@@ -183,7 +155,7 @@
                         <div class="single-product-item text-center">
                             <div class="products-images">
                                 <a href="#" class="product-thumbnail img-fluid">
-                                    <img src="{{ asset('sanaaspace/assets/images/Benchi.jpg') }}"
+                                    <img src="{{ asset('sanaaspace/assets/images/Benchi4.png') }}"
                                         class="h-100 img-fluid" alt="Product Images">
                                 </a>
                             </div>
@@ -273,7 +245,7 @@
             <div class="col-lg-10">
                 <div class="newsletter--box">
                     <div class="row align-items-center text-sm-left text-center">
-                        <div class="col-lg-10 col-md-4">
+                        <div class="col-lg-12 col-md-4">
                             <div class="section-title small-mb__20 tablet-mb__10">
                                 <h4 class="section-title"><b>Are you an artisan-made furniture brand?</b></h4>
                                 <p class="section-space--pt_30">We would love to add your furniture to our collection. Connect with us - add

@@ -178,22 +178,22 @@
                             <h6 class="footer-widget__title mb-20">Social media</h6>
                             <ul class="list footer-social-networks mt-25">
                                 <li class="item">
-                                    <a href="#" target="_blank" aria-label="Facebook">
+                                    <a href="https://www.facebook.com/sanaaspace.co" target="_blank" aria-label="Facebook">
                                         <i class="social social_facebook"></i>
                                     </a>
                                 </li>
                                 <li class="item">
-                                    <a href="#" target="_blank" aria-label="Twitter">
+                                    <a href="https://twitter.com/sanaaspace" target="_blank" aria-label="Twitter">
                                         <i class="social social_twitter"></i>
                                     </a>
                                 </li>
                                 <li class="item">
-                                    <a href="#" target="_blank" aria-label="Instagram">
+                                    <a href="https://www.instagram.com/sanaaspace.co/" target="_blank" aria-label="Instagram">
                                         <i class="social social_instagram"></i>
                                     </a>
                                 </li>
                                 <li class="item">
-                                    <a href="#" target="_blank" aria-label="Instagram">
+                                    <a href="https://www.linkedin.com/company/sanaaspaceco" target="_blank" aria-label="LinkedIn">
                                         <i class="social social_linkedin"></i>
                                     </a>
                                 </li>
@@ -389,10 +389,10 @@
 
                 <div class="mobile-menu-social-share section-space--mt_15">
                     <ul class="social-share">
-                        <li><a href="#"><i class="social social_facebook"></i></a></li>
-                        <li><a href="#"><i class="social social_twitter"></i></a></li>
-                        <li><a href="#"><i class="social social_instagram"></i></a></li>
-                        <li><a href="#"><i class="social social_linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/sanaaspace.co"><i class="social social_facebook"></i></a></li>
+                        <li><a href="https://twitter.com/sanaaspace"><i class="social social_twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/sanaaspace.co/"><i class="social social_instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/sanaaspaceco"><i class="social social_linkedin"></i></a></li>
                     </ul>
                 </div>
 
