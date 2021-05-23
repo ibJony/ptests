@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sanaa Space Furniture</title>
-    <meta name="description" content="">
+    <meta name="description" content="Sanaa Space is a mission-driven online marketplace for original artwork, artisan-made furniture and home accessories.">
+    <meta property="image" content="{{ asset('sanaaspace/assets/images/banner.jpeg')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('sanaaspace/assets/images/favicon.ico')}}">
