@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
-use Cart;
+use Illuminate\Support\Facades\DB;
+// use DB;
+use Gloudemans\Shoppingcart\Facades\Cart;
 use Response;
 use Auth;
 use Session;
@@ -56,7 +57,7 @@ class CartController extends Controller
   public function ShowCart()
   {
     $cart = Cart::content();
-    return view('pages.cart', compact('cart'));
+    return view('app.pages.cart', compact('cart'));
   }
 
 
@@ -114,10 +115,12 @@ class CartController extends Controller
   public function insertCart(Request $request)
   {
     $id = $request->product_id;
+    echo($id);
     $product = DB::table('products')->where('id', $id)->first();
     $color = $request->color;
     $size = $request->size;
     $qty = $request->qty;
+
 
     $data = array();
 

@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
-use Auth;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class WishlistController extends Controller
 {
@@ -22,17 +22,21 @@ class WishlistController extends Controller
 			  if (Auth::Check()) {
              
              if ($check) {
-              return \Response::json(['error' => 'Product Already Has on your wishlist']);	 
+               return \Response::json(['error' => 'Product Already Has on your wishlist']);
+              // return redirect()->back()->with(['message' => 'Product Already Has on your wishlist!', 'alert' => 'alert-danger']);
+	 
              }else{
              	DB::table('wishlists')->insert($data);
-          return \Response::json(['success' => 'Product Added on wishlist']);
+               return \Response::json(['success' => 'Product Added on wishlist']);
+               // return redirect()->back()->with(['message' => 'Product Added on wishlist!', 'alert' => 'alert-success']);
+
  
              }
              
 			  	 
 			  }else{
-          return \Response::json(['error' => 'At first loing your account']);      
-
+            return \Response::json(['error' => 'At first loing your account']);   
+            // return redirect()->back()->with(['message' => 'At first loing your account!', 'alert' => 'alert-danger']);
 			  } 
 
    }

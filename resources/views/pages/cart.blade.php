@@ -35,7 +35,6 @@
 									</div>
 									@endif
 
-
 									@if($row->options->size == NULL)
 
 									@else
@@ -44,7 +43,6 @@
 										<div class="cart_item_text"> {{ $row->options->size }}</div>
 									</div>
 									@endif
-
 
 									<div class="cart_item_quantity cart_info_col">
 										<div class="cart_item_title">Quantity</div><br>
@@ -57,8 +55,6 @@
 
 										</form>
 									</div>
-
-
 
 									<div class="cart_item_price cart_info_col">
 										<div class="cart_item_title">Price</div>
@@ -73,8 +69,6 @@
 										<div class="cart_item_title">Action</div><br>
 										<a href="{{ url('remove/cart/'.$row->rowId ) }}" class="btn btn-sm btn-danger">x</a>
 									</div>
-
-
 
 								</div>
 							</li>

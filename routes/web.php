@@ -4,11 +4,6 @@
 Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('/callback/{provider}', 'SocialController@callback');
 
-
-Route::get('/', function () {return view('app.pages.index');});
-
-// Route::get('/', function () {return view('pages.index');});
-
 //auth & user
 Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home');
@@ -20,7 +15,8 @@ Route::get('/user/logout', 'HomeController@Logout')->name('user.logout');
 Route::get('admin/home', 'AdminController@index');
 Route::get('admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
 Route::post('admin', 'Admin\LoginController@login');
-        // Password Reset Routes...
+        
+// Password Reset Routes...
 Route::get('admin/password/reset', 'Admin\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
 Route::post('admin-password/email', 'Admin\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
 Route::get('admin/reset/password/{token}', 'Admin\ResetPasswordController@showResetForm')->name('admin.password.reset');
@@ -30,7 +26,7 @@ Route::post('/admin/password/update','AdminController@Update_pass')->name('admin
 Route::get('admin/logout', 'AdminController@logout')->name('admin.logout'); 
 
 
-    /// Admin Section 
+/// Admin Section 
 // categories 
 Route::get('admin/categories', 'Admin\Category\CategoryController@category')->name('categories');
 Route::post('admin/store/category', 'Admin\Category\CategoryController@storecategory')->name('store.category');
@@ -107,6 +103,10 @@ Route::post('update/post/{id}', 'Admin\PostController@UpdatePost');
 
 
 
+// Restructure frontend views
+Route::get('/', function () {return view('app.pages.index');});
+Route::get('/products', function () {return view('app.pages.shop');})->name('app.pages.shop');
+// Route::get('/', function () {return view('pages.index');});
 
 
 // Frontend All Routes
@@ -135,8 +135,12 @@ Route::get('coupon/remove/', 'CartController@CouponRemove')->name('coupon.remove
 
 
 
-
+// Product details
 Route::get('/product/details/{id}/{product_name}', 'ProductController@ProductView');
+
+//.. 
+Route::get('/productview', function () {return view('app.pages.productdetails');});
+
 
 Route::post('/cart/product/add/{id}', 'ProductController@AddCart');
 

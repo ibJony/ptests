@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3cb060024a66b0eb7374509ccc5f559d",
+    "content-hash": "5923a25076516a15852cc06b4b98a6ff",
     "packages": [
         {
             "name": "bumbummen99/shoppingcart",
-            "version": "2.10.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bumbummen99/LaravelShoppingcart.git",
-                "reference": "2d11e6ad582bf99b7e4f02459d1339394b2b1fa7"
+                "reference": "f2c763e311b0fc58b2dfdfa2c41c6318a7c884e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bumbummen99/LaravelShoppingcart/zipball/2d11e6ad582bf99b7e4f02459d1339394b2b1fa7",
-                "reference": "2d11e6ad582bf99b7e4f02459d1339394b2b1fa7",
+                "url": "https://api.github.com/repos/bumbummen99/LaravelShoppingcart/zipball/f2c763e311b0fc58b2dfdfa2c41c6318a7c884e1",
+                "reference": "f2c763e311b0fc58b2dfdfa2c41c6318a7c884e1",
                 "shasum": ""
             },
             "require": {
@@ -73,9 +73,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bumbummen99/LaravelShoppingcart/issues",
-                "source": "https://github.com/bumbummen99/LaravelShoppingcart/tree/2.10.0"
+                "source": "https://github.com/bumbummen99/LaravelShoppingcart/tree/4.0.0"
             },
-            "time": "2020-09-12T00:58:25+00:00"
+            "time": "2021-01-18T23:55:30+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -8060,7 +8060,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "php": "^7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"

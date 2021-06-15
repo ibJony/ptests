@@ -1,5 +1,5 @@
 ## LaravelShoppingcart
-[![Build Status](https://travis-ci.org/bumbummen99/LaravelShoppingcart.png?branch=master)](https://travis-ci.org/bumbummen99/LaravelShoppingcart)
+![CI Code Checks](https://github.com/bumbummen99/LaravelShoppingcart/workflows/CI%20Code%20Checks/badge.svg?branch=master)
 [![codecov](https://codecov.io/gh/bumbummen99/LaravelShoppingcart/branch/master/graph/badge.svg)](https://codecov.io/gh/bumbummen99/LaravelShoppingcart)
 [![StyleCI](https://styleci.io/repos/152610878/shield?branch=master)](https://styleci.io/repos/152610878)
 [![Total Downloads](https://poser.pugx.org/bumbummen99/shoppingcart/downloads.png)](https://packagist.org/packages/bumbummen99/shoppingcart)
@@ -585,7 +585,7 @@ If you want to retrieve the cart from the database and restore it, all you have 
 If you want to merge the cart with another one from the database, all you have to do is call the  `merge($identifier)` where `$identifier` is the key you specified for the `store` method. You can also define if you want to keep the discount and tax rates of the items and if you want to dispatch "cart.added" events.
      
     // Merge the contents of 'savedcart' into 'username'.
-    Cart::instance('username')->merge('savedcart', $keepDiscount, $keepTaxrate, $dispatchAdd);
+    Cart::instance('username')->merge('savedcart', $keepDiscount, $keepTaxrate, $dispatchAdd, 'savedcartinstance');
 
 ### Erasing the cart
 If you want to erase the cart from the database, all you have to do is call the  `erase($identifier)` where `$identifier` is the key you specified for the `store` method.
@@ -653,15 +653,18 @@ The Cart package will throw exceptions if something goes wrong. This way it's ea
 
 The cart also has events build in. There are five events available for you to listen for.
 
-| Event         | Fired                                    | Parameter                        |
-| ------------- | ---------------------------------------- | -------------------------------- |
-| cart.added    | When an item was added to the cart.      | The `CartItem` that was added.   |
-| cart.updated  | When an item in the cart was updated.    | The `CartItem` that was updated. |
-| cart.removed  | When an item is removed from the cart.   | The `CartItem` that was removed. |
-| cart.merged   | When the content of a cart is merged     | -                                |
-| cart.stored   | When the content of a cart was stored.   | -                                |
-| cart.restored | When the content of a cart was restored. | -                                |
-| cart.erased   | When the content of a cart was erased.   | -                                |
+| Event         | Fired                                    | Parameter                             |
+| ------------- | ---------------------------------------- | ------------------------------------- |
+| cart.adding   | When adding an item to the cart.         | The `CartItem` that is being added.   |
+| cart.updating | When updating an item to the cart.       | The `CartItem` that is being updated. |
+| cart.removing | When removing an item to the cart.       | The `CartItem` that is being removed. |
+| cart.added    | When an item was added to the cart.      | The `CartItem` that was added.        |
+| cart.updated  | When an item was updated to the cart.    | The `CartItem` that was updated.      |
+| cart.removed  | When an item was removed from the cart.  | The `CartItem` that was removed.      |
+| cart.merged   | When the content of a cart is merged     | -                                     |
+| cart.stored   | When the content of a cart was stored.   | -                                     |
+| cart.restored | When the content of a cart was restored. | -                                     |
+| cart.erased   | When the content of a cart was erased.   | -                                     |
 
 ## Example
 

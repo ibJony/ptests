@@ -27,24 +27,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '4b74897b8b7a3532adf69338c7948fdd5ec94e75',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
   array (
     'bumbummen99/shoppingcart' => 
     array (
-      'pretty_version' => '2.10.0',
-      'version' => '2.10.0.0',
+      'pretty_version' => '4.0.0',
+      'version' => '4.0.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2d11e6ad582bf99b7e4f02459d1339394b2b1fa7',
+      'reference' => 'f2c763e311b0fc58b2dfdfa2c41c6318a7c884e1',
     ),
     'cordoval/hamcrest-php' => 
     array (
@@ -68,6 +68,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '77880488b9954b7884c25555c2a0ea9e7053f9d2',
+    ),
+    'dnoegel/php-xdg-base-dir' => 
+    array (
+      'pretty_version' => 'v0.1.1',
+      'version' => '0.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd',
     ),
     'doctrine/inflector' => 
     array (
@@ -477,12 +486,12 @@ private static $installed = array (
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '4b74897b8b7a3532adf69338c7948fdd5ec94e75',
     ),
     'laravel/passport' => 
     array (
@@ -905,8 +914,8 @@ private static $installed = array (
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache' => 

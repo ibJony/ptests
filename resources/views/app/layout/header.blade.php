@@ -36,6 +36,17 @@
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="{{ asset('sanaaspace/assets/css/style.css')}}">
 
+    <!-- chart -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+    <script src="https://js.stripe.com/v3/"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+     <script src="{{ asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js')}}"></script>
+    
+
 </head>
 
 <body class="@@body-box">
@@ -69,6 +80,13 @@
     <!--====================  header area ====================-->
     <div class="header-area header-area--default bg-white">
 
+        @php
+
+        $wishlist = DB::table('wishlists')->where('user_id',Auth::id())->get();
+        $cartcount = Cart::count();
+
+        @endphp
+
         <!-- Header Bottom Wrap Start -->
         <header class="header-area header_absolute header_height-120 header-sticky section-space--pb_30">
             <div class="container-fluid container-fluid--cp-100">
@@ -96,10 +114,20 @@
                                     <i class="icon-magnifier"></i>
                                 </a>
                             </div>
+
+                            @auth
+                            <div class="header-right-items d-none d-md-block">
+                                <a href="#" class="header-cart">
+                                    <i class="icon-heart"></i>
+                                    <span class="item-counter">{{ $wishlist->count() }}</span>
+                                </a>
+                            </div>
+                            @endauth
+
                             <div class="header-right-items">
-                                <a href="#" class=" header-cart minicart-btn toolbar-btn header-icon">
+                                <a href="{{ route('show.cart') }}" class="header-cart">
                                     <i class="icon-bag2"></i>
-                                    <span class="item-counter"></span>
+                                    <span class="item-counter"> {{ $cartcount }} </span>
                                 </a>
                             </div>
 
@@ -280,6 +308,23 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    @if(session()->has('message'))
+    <div class="notification modal" id="notify" role="alert" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-box-wrapper">
+                    
+                    <div class="alert {{session('alert') ?? 'alert-info'}}">
+                        {{ session('message') }}
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    @endif
 
 
     <!-- Modal -->
@@ -498,7 +543,9 @@
     <!-- Main JS -->
     <script src="{{ asset('sanaaspace/assets/js/main.js')}}"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
 
 </body>
 
 </html>
+
