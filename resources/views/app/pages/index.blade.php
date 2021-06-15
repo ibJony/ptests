@@ -16,7 +16,7 @@
                         ones, all in one place.</p>
 
                     <div class="button-box section-space--mt_20">
-                        <a href="#" class="btn--text-icon btn btn-dark text-center">Explore Collection</a>
+                        <a href="{{ route('app.pages.shop') }}" class="btn--text-icon btn btn-dark text-center">Explore Collection</a>
                         <br/><br/>
                     </div>
                 </div>
